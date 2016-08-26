@@ -1,0 +1,16 @@
+package com.thrisk.base.items;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraftforge.common.util.EnumHelper;
+
+public class ModItems {
+	public static ToolMaterial Karinium = EnumHelper.addToolMaterial("Karinium", 4, 3048, 11.0F, 4.0F, 21);
+	
+	public static Item kariniumDust;
+	
+	public static final void init() {
+		GameRegistry.registerItem(kariniumDust = new CustomItemMaterial("Karinium Dust", "KariniumDust"), "Karinium Dust");
+	}
+}

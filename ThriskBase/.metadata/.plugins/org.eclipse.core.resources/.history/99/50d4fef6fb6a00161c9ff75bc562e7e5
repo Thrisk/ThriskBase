@@ -1,0 +1,11 @@
+package com.thrisk.base.materials;
+
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraftforge.common.util.EnumHelper;
+
+public class ModMaterials {
+	public static ToolMaterial Karinium = EnumHelper.addToolMaterial("Karinium", 4, 3048, 11.0F, 4.0F, 21);
+	public static ArmorMaterial KariniumA = EnumHelper.addArmorMaterial("KariniumA", 64, new int[]{4, 8, 6, 3}, 24);
+
+}

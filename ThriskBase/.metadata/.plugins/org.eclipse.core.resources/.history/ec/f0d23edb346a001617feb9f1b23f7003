@@ -1,0 +1,14 @@
+package com.thrisk.base.items;
+
+import com.thrisk.base.Main;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class CustomItem extends Item {
+	public CustomItem( String IName, String myTexture){
+	    this.setUnlocalizedName(IName);
+	    this.setCreativeTab(CreativeTabs.tabMisc);
+		this.setTextureName(Main.MODID + ":" + myTexture);
+	}
+}

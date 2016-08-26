@@ -1,0 +1,16 @@
+[
+{
+"modid": "ThriskBase",
+"name": "ThriskBase",
+"description": "ThriskBaseMod",
+"version": "$version",
+"mcversion": "$mcversion",
+"url": "(leave blank)",
+"updateUrl": "(leave blank)",
+"authors": ["Thrisk"],
+"credits": "Thrisk Made This",
+"logoFile": "",
+"screenshots": [],
+"dependencies": [mod_MinecraftForge]
+}
+]

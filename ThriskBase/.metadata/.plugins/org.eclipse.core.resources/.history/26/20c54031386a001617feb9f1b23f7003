@@ -1,0 +1,24 @@
+package com.thrisk.base.items;
+
+import cpw.mods.fml.common.registry.GameData;
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.util.RegistryNamespaced;
+
+public class ModItems {
+    public static final RegistryNamespaced itemRegistry = GameData.getItemRegistry();
+    protected int maxStackSize = 64;
+    protected String iconString;
+    public static int getIdFromItem(Item FromId){
+        return FromId == null ? 0 : itemRegistry.getIDForObject(FromId);
+    }
+    public static Item getItemById(int ById){
+        return (Item)itemRegistry.getObjectById(ById);
+    }
+    public static Item getItemFromBlock(Block ByBlock){
+        return getItemById(Block.getIdFromBlock(ByBlock));
+    }
+	public static final void init() {
+		itemRegistry.addObject(440, "kariniumDust", (new CustomItemMaterial("Karinium Dust", "KariniumDust")));
+	}
+}

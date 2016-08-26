@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;Forge&apos;&#x0D;&#x0A;- Original project: &apos;Forge&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Forge/src/main/java&#x0D;&#x0A;     Forge/src/main/resources" description="Delete elements" element1="/src\/main\/java" element2="/src\/main\/resources" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1472080281247" subPackages="false" version="1.0"/>
+</session>

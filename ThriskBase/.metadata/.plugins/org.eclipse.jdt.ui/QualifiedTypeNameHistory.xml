@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="com.thrisk.base.blocks.ModBlocks"/>
+<fullyQualifiedTypeName name="com.thrisk.base.items.ModItems"/>
+<fullyQualifiedTypeName name="com.thrisk.base.materials.ModMaterials"/>
+<fullyQualifiedTypeName name="com.thrisk.base.world.ModWorldGen"/>
+<fullyQualifiedTypeName name="com.thrisk.base.recipes.ModRecipes"/>
+<fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
+<fullyQualifiedTypeName name="com.thrisk.base.Main"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+</qualifiedTypeNameHistroy>

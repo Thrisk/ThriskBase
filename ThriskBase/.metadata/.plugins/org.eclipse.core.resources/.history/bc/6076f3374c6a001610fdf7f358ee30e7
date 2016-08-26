@@ -1,0 +1,27 @@
+package com.thrisk.base;
+
+import com.thrisk.base.blocks.ModBlocks;
+import com.thrisk.base.items.ModItems;
+
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+public class CommonProxy {
+	
+    public void preInit(FMLPreInitializationEvent e) {   
+    	ModBlocks.init();
+    	ModItems.init();
+    	Mod
+
+
+    }
+
+    public void init(FMLInitializationEvent e) {
+
+    }
+
+    public void postInit(FMLPostInitializationEvent e) {
+
+    }
+}

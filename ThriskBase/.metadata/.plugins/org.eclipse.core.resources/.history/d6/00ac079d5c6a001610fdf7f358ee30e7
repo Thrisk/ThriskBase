@@ -1,0 +1,14 @@
+package com.thrisk.base.items;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemArmor;
+
+public class CustomArmor extends ItemArmor {
+
+	public CustomArmor(ArmorMaterial material, int render, int armorPiece) {
+		super(material, render, armorPiece);
+		this.setCreativeTab(CreativeTabs.tabCombat);
+		
+	}
+
+}

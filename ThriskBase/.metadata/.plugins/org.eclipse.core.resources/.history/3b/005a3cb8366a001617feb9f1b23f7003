@@ -1,0 +1,31 @@
+package com.thrisk.base.items;
+
+import cpw.mods.fml.common.registry.GameData;
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.util.RegistryNamespaced;
+
+public class ModItems {
+    public static final RegistryNamespaced itemRegistry = GameData.getItemRegistry();
+    /** Maximum size of the stack. */
+    protected int maxStackSize = 64;
+    /** The string associated with this Item's Icon. */
+    protected String iconString;
+    public static int getIdFromItem(Item p_150891_0_){
+        return p_150891_0_ == null ? 0 : itemRegistry.getIDForObject(p_150891_0_);
+    }
+    public static Item getItemById(int p_150899_0_){
+        return (Item)itemRegistry.getObjectById(p_150899_0_);
+    }
+    public static Item getItemFromBlock(Block p_150898_0_){
+        return getItemById(Block.getIdFromBlock(p_150898_0_));
+    }
+
+	
+	///
+	public static Item kariniumDust;
+	
+	public static final void init() {
+		itemRegistry.addObject(440, "kariniumDust", (new CustomItemMaterial("Karinium Dust", "KariniumDust")));
+	}
+}

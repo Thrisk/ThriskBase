@@ -1,0 +1,36 @@
+package com.thrisk.base.items;
+
+import com.thrisk.base.materials.ModMaterials;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
+
+public class ModItems {
+	
+	public static Item kariniumDust;
+	public static Item kariniumCrystal;
+	public static Item kariniumSpade;
+	public static Item kariniumAxe;
+	public static Item kariniumPickaxe;
+	public static Item kariniumSword;
+	public static Item kariniumHelm;
+	public static Item kariniumBrestplate;
+	public static Item kariniumLeggings;
+	public static Item kariniumBoots;
+	
+	public static final void init() {
+		GameRegistry.registerItem(kariniumDust = new CustomItemMaterial("Karinium Dust", "KariniumDust"), "Karinium Dust");
+		GameRegistry.registerItem(kariniumCrystal = new CustomItemMaterial("Karinium Crystal", "KariniumCrystal"), "Karinium Crystal");
+		//Tools
+		GameRegistry.registerItem(kariniumSpade = new CustomSpade(ModMaterials.Karinium,"Karinium Shovel", "kariniumShovel"), "Karinium Shovel");
+		GameRegistry.registerItem(kariniumAxe = new CustomAxe(ModMaterials.Karinium,"Karinium Axe","kariniumAxe"), "Karinium Axe");
+		GameRegistry.registerItem(kariniumPickaxe = new CustomPickaxe(ModMaterials.Karinium, "Karinium Pickaxe", "KariniumPickaxe"), "Karinium Pickaxe");
+		//Weapon
+		GameRegistry.registerItem(kariniumSword = new CustomSword(ModMaterials.Karinium, "Karinium Sword", "kariniumSword"),"Karinium Sword" );
+		//Armor
+		GameRegistry.registerItem(kariniumHelm = new CustomArmor(ModMaterials.KariniumA, "Karinium Helm", 0, "KariniumHelm"), "Karinium Helm");
+		GameRegistry.registerItem(kariniumBrestplate = new CustomArmor(ModMaterials.KariniumA, "Karinium Brestplate", 1, "KariniumBrestplate"), "Karinium Brestplate");
+		GameRegistry.registerItem(kariniumLeggings = new CustomArmor(ModMaterials.KariniumA, "Karinium Leggings", 2, "KariniumLeggings"), "Karinium Leggings");
+		GameRegistry.registerItem(kariniumBoots = new CustomArmor(ModMaterials.KariniumA, "Karinium Boots", 3, "KariniumBoots"), "Karinium Boots");
+	}
+}

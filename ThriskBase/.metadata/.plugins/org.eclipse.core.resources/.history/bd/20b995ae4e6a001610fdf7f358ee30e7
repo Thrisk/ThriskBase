@@ -1,0 +1,15 @@
+package com.thrisk.base.items;
+
+import com.thrisk.base.Main;
+
+import net.minecraft.item.ItemAxe;
+
+public class CustomAxe extends ItemAxe {
+
+	protected CustomAxe(ToolMaterial material, String name, String texture) {
+		super(material);
+		this.setUnlocalizedName(name);
+		this.setTextureName(Main.MODID + ":" +  texture);
+	}
+
+}

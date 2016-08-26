@@ -1,0 +1,34 @@
+package com.thrisk.base.items;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.util.EnumHelper;
+
+public class ModItems {
+	public static ToolMaterial Karinium = EnumHelper.addToolMaterial("Karinium", 4, 3048, 11.0F, 4.0F, 21);
+	
+	public static Item kariniumDust;
+	public static Item kariniumCrystal;
+	public static Item kariniumSpade;
+	public static Item kariniumAxe;
+	public static Item kariniumPickaxe;
+	public static Item kariniumSword;
+	
+	public static final void init() {
+		GameRegistry.registerItem(kariniumDust = new CustomItemMaterial("Karinium Dust", "KariniumDust"), "Karinium Dust");
+		GameRegistry.registerItem(kariniumCrystal = new customItem("Karinium Crystal", "KariniumCrystal"), "Karinium Crystal");
+		//Tools
+		GameRegistry.registerItem(kariniumSpade = new CustomSpade(Karinium,"Karinium Shovel", "kariniumShovel"), "Karinium Shovel");
+		GameRegistry.registerItem(kariniumAxe = new CustomAxe(Karinium,"Karinium Axe","kariniumAxe"), "Karinium Axe");
+		GameRegistry.registerItem(kariniumPickaxe = new CustomPickaxe(Karinium, "Karinium Pickaxe", "KariniumPickaxe"), "Karinium Pickaxe");
+		//Weapon
+		GameRegistry.registerItem(kariniumSword = new CustomSword(Karinium, "Karinium Sword", "kariniumSword"),"Karinium Sword" );
+		// Crafting Recipes That Make Items
+		GameRegistry.addRecipe(new ItemStack(kariniumDust), new Object[] {"#*#", "#B#", "#*#", '#', new ItemStack(Items.dye , 1, 4), '*', Items.redstone, 'B', Items.blaze_powder});
+		GameRegistry.addRecipe(new ItemStack(kariniumCrystal), new Object[] {" # ", "#D#", " # ", '#', kariniumDust, 'D', Items.diamond});
+		GameRegistry.addRecipe(new ItemStack(kariniumPickaxe), new Object[] {"###", " I "," I ", '#', kariniumCrystal, 'I', Items.stick});
+	}
+}
