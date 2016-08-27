@@ -8,7 +8,6 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
 public class ModItems {
 	
@@ -27,9 +26,9 @@ public class ModItems {
 		GameRegistry.registerItem(kariniumDust = new CustomItemMaterial("Karinium Dust", "KariniumDust"), "Karinium Dust");
 		GameRegistry.registerItem(kariniumCrystal = new CustomItemMaterial("Karinium Crystal", "KariniumCrystal"), "Karinium Crystal");
 		//Tools
-		GameRegistry.registerItem(kariniumSpade = new CustomSpade(ModMaterials.Karinium,"Karinium Shovel", "kariniumShovel"), "Karinium Shovel");
-		GameRegistry.registerItem(kariniumAxe = new CustomAxe(ModMaterials.Karinium,"Karinium Axe","kariniumAxe"), "Karinium Axe");
-		GameRegistry.registerItem(kariniumPickaxe = new CustomPickaxe(ModMaterials.Karinium, "Karinium Pickaxe", "KariniumPickaxe"), "Karinium Pickaxe");
+//		GameRegistry.registerItem(kariniumSpade = new CustomSpade(ModMaterials.Karinium,"Karinium Shovel", "kariniumShovel"), "Karinium Shovel");
+//		GameRegistry.registerItem(kariniumAxe = new CustomAxe(ModMaterials.Karinium,"Karinium Axe","kariniumAxe"), "Karinium Axe");
+//		GameRegistry.registerItem(kariniumPickaxe = new CustomPickaxe(ModMaterials.Karinium, "Karinium Pickaxe", "KariniumPickaxe"), "Karinium Pickaxe");
 		//Weapon
 		GameRegistry.registerItem(kariniumSword = new CustomSword(ToolMaterials.Karinium, "Karinium Sword", "kariniumSword"),"Karinium Sword" );
 		//Armor
