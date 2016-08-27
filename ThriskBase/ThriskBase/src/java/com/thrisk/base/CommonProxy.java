@@ -1,7 +1,6 @@
 package com.thrisk.base;
 
 import com.thrisk.base.blocks.ModBlocks;
-import com.thrisk.base.items.ModItem;
 import com.thrisk.base.items.ModItems;
 import com.thrisk.base.recipes.ModRecipes;
 import com.thrisk.base.world.ModWorldGen;
@@ -15,7 +14,6 @@ public class CommonProxy {
 	
     public void preInit(FMLPreInitializationEvent e) {   
     	ModItems.init();
-    	ModItem.init();
     	ModBlocks.init();
     	ModRecipes.init();
 
