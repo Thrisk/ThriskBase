@@ -7,9 +7,9 @@ import net.minecraft.item.ItemPickaxe;
 
 public final class CustomPickaxe extends ItemPickaxe {
 
-	public CustomPickaxe(ToolMaterial material, String newMaterial, String myTexture) {
+	public CustomPickaxe(ToolMaterial material, String name, String myTexture) {
 		super(material);
-        this.setUnlocalizedName(newMaterial);
+        this.setUnlocalizedName(name);
         this.setTextureName(Main.MODID + ":" + myTexture);
         this.setCreativeTab(CreativeTabs.tabTools);
 	}
