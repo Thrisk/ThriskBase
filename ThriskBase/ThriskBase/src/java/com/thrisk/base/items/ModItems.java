@@ -26,9 +26,9 @@ public class ModItems {
 		GameRegistry.registerItem(kariniumDust = new CustomItemMaterial("Karinium Dust", "KariniumDust"), "Karinium Dust");
 		GameRegistry.registerItem(kariniumCrystal = new CustomItemMaterial("Karinium Crystal", "KariniumCrystal"), "Karinium Crystal");
 		//Tools
-//		GameRegistry.registerItem(kariniumSpade = new CustomSpade(ModMaterials.Karinium,"Karinium Shovel", "kariniumShovel"), "Karinium Shovel");
-//		GameRegistry.registerItem(kariniumAxe = new CustomAxe(ModMaterials.Karinium,"Karinium Axe","kariniumAxe"), "Karinium Axe");
-//		GameRegistry.registerItem(kariniumPickaxe = new CustomPickaxe(ModMaterials.Karinium, "Karinium Pickaxe", "KariniumPickaxe"), "Karinium Pickaxe");
+		GameRegistry.registerItem(kariniumSpade = new CustomSpade(ToolMaterials.Karinium,"Karinium Shovel", "kariniumShovel"), "Karinium Shovel");
+		GameRegistry.registerItem(kariniumAxe = new CustomAxe(ToolMaterials.Karinium,"Karinium Axe","kariniumAxe"), "Karinium Axe");
+		GameRegistry.registerItem(kariniumPickaxe = new CustomPickaxe(ToolMaterials.Karinium, "Karinium Pickaxe", "KariniumPickaxe"), "Karinium Pickaxe");
 		//Weapon
 		GameRegistry.registerItem(kariniumSword = new CustomSword(ToolMaterials.Karinium, "Karinium Sword", "kariniumSword"),"Karinium Sword" );
 		//Armor
