@@ -1,19 +1,20 @@
 package com.thrisk.base.items;
 
 import com.thrisk.base.Main;
+import com.thrisk.base.materials.CustomItemArmor;
+import com.thrisk.base.materials.ModMaterials.ArmorMaterials;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
-import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
-public class CustomArmor extends ItemArmor{
+public class CustomArmor extends CustomItemArmor{
 	public String materialT;
-	public ArmorMaterial material;
+	public ArmorMaterials material;
 	public String Layer;
 
 
-	public CustomArmor(ArmorMaterial material, String name, int armorPiece, String textureName) {
+	public CustomArmor(ArmorMaterials material, String name, int armorPiece, String textureName) {
 		super(material, 0, armorPiece);
 		this.setCreativeTab(CreativeTabs.tabCombat);
 		this.materialT = textureName;
