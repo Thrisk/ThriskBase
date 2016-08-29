@@ -3,11 +3,13 @@ package com.thrisk.base.materials;
 import com.thrisk.base.items.ModItems;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.util.EnumHelper;
 
 public class ModMaterials {
 	//public static ToolMaterial Karinium = EnumHelper.addToolMaterial("Karinium", 4, 3048, 11.0F, 4.0F, 21);
-	//public static ArmorMaterial KariniumA = EnumHelper.addArmorMaterial("Karinium", 64, new int[]{4, 8, 6, 4}, 24);
+	public static ArmorMaterial KariniumA = EnumHelper.addArmorMaterial("Karinium", 64, new int[]{4, 8, 6, 4}, 24);
 	
 	
 	public static enum ToolMaterials{
@@ -55,22 +57,19 @@ public class ModMaterials {
                 default:      return ModItems.kariniumCrystal;
             }
         }
-        public ItemStack getRepairItemStack()
-        {
-            if (repairMaterial != null) return repairMaterial;
-            Item repM = this.repairMat();
-            if (repM == null) return null;
-            repairMaterial = new ItemStack(repM, 1, net.minecraftforge.oredict.OreDictionary.WILDCARD_VALUE);
-            return repairMaterial;
+        public ItemStack getRepairItemStack(){
+        	Item repM = this.repairMat();
+            return(repairMaterial != null ? repairMaterial : (repM != null ? repairMaterial = new ItemStack(repM, 1, net.minecraftforge.oredict.OreDictionary.WILDCARD_VALUE) : null));
         }
-		
 	}
+}
 	//Tool Materials End
-	
+	/*
 	private static final int[] maxDamageArray = new int[] {11, 16, 15, 13};
 	
 	public static enum ArmorMaterials{
-	// Armor Materials
+	// Armor Materials - Broken
+		CLOTH(5, new int[]{1, 3, 2, 1}, 15),
 		KariniumA(64, new int[]{4, 8, 6, 4}, 24);
 		
 		
@@ -99,7 +98,9 @@ public class ModMaterials {
         
         public Item func_151685_b(){
             return this == KariniumA ? ModItems.kariniumCrystal :
-                 customCraftingMaterial;
+            	(this == CLOTH ? Items.leather :
+            	
+                 customCraftingMaterial);
         }
     }
-}
+}*/

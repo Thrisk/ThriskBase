@@ -2,7 +2,7 @@ package com.thrisk.base.items;
 
 
 
-import com.thrisk.base.materials.ModMaterials.ArmorMaterials;
+import com.thrisk.base.materials.ModMaterials;
 import com.thrisk.base.materials.ModMaterials.ToolMaterials;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -34,10 +34,10 @@ public class ModItems {
 		//Weapon
 		GameRegistry.registerItem(kariniumSword = new CustomSword(ToolMaterials.Karinium, "Karinium Sword", "kariniumSword"),"Karinium Sword" );
 		//Armor
-		GameRegistry.registerItem(kariniumHelm = new CustomArmor(ArmorMaterials.KariniumA, "KariniumHelm", 0, "KariniumHelm"), "KariniumHelm");
-		GameRegistry.registerItem(kariniumBrestplate = new CustomArmor(ArmorMaterials.KariniumA, "KariniumBrestplate", 1, "KariniumBrestplate"), "Karinium Brestplate");
-		GameRegistry.registerItem(kariniumLeggings = new CustomArmor(ArmorMaterials.KariniumA, "KariniumLeggings", 2, "KariniumLeggings"), "Karinium Leggings");
-		GameRegistry.registerItem(kariniumBoots = new CustomArmor(ArmorMaterials.KariniumA, "KariniumBoots", 3, "KariniumBoots"), "Karinium Boots");
+		GameRegistry.registerItem(kariniumHelm = new CustomArmor(ModMaterials.KariniumA, "KariniumHelm", 0, "KariniumHelm"), "KariniumHelm");
+		GameRegistry.registerItem(kariniumBrestplate = new CustomArmor(ModMaterials.KariniumA, "KariniumBrestplate", 1, "KariniumBrestplate"), "Karinium Brestplate");
+		GameRegistry.registerItem(kariniumLeggings = new CustomArmor(ModMaterials.KariniumA, "KariniumLeggings", 2, "KariniumLeggings"), "Karinium Leggings");
+		GameRegistry.registerItem(kariniumBoots = new CustomArmor(ModMaterials.KariniumA, "KariniumBoots", 3, "KariniumBoots"), "Karinium Boots");
 	}
 	
 		    /////////////////////////////////////////////////////////////////////////////////////
@@ -80,7 +80,7 @@ public class ModItems {
 	
 //	public static enum ToolMaterials{
 //		
-//		//ToolMaterials
+//		//ToolMaterials - Moved To ModMaterials.ToolMaterials
 //		Karinium(4, 3048, 11.0F, 4.0F, 21);
 //		
 //		

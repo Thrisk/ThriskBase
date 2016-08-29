@@ -128,33 +128,19 @@ public class CustomItemTool extends Item{
     /*===================================== FORGE START =================================*/
     private String toolClass;
     @Override
-    public int getHarvestLevel(ItemStack stack, String toolClass)
-    {
+    public int getHarvestLevel(ItemStack stack, String toolClass){
         int level = super.getHarvestLevel(stack, toolClass);
-        if (level == -1 && toolClass != null && toolClass.equals(this.toolClass))
-        {
-            return this.toolMaterial.getHarvestLevel();
-        }
-        else
-        {
-            return level;
-        }
+        return(level == -1 && toolClass != null && toolClass.equals(this.toolClass) ? this.toolMaterial.getHarvestLevel() : level);
     }
 
     @Override
-    public Set<String> getToolClasses(ItemStack stack)
-    {
+    public Set<String> getToolClasses(ItemStack stack){
         return toolClass != null ? ImmutableSet.of(toolClass) : super.getToolClasses(stack);
     }
 
     @Override
-    public float getDigSpeed(ItemStack stack, Block block, int meta)
-    {
-        if (ForgeHooks.isToolEffective(stack, block, meta))
-        {
-            return efficiencyOnProperMaterial;
-        }
-        return super.getDigSpeed(stack, block, meta);
+    public float getDigSpeed(ItemStack stack, Block block, int meta){
+        return(ForgeHooks.isToolEffective(stack, block, meta) ? efficiencyOnProperMaterial : super.getDigSpeed(stack, block, meta));
     }
     /*===================================== FORGE END =================================*/
 }

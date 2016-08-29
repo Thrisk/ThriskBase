@@ -33,14 +33,7 @@ public class TestOre extends Block {
 	}
 	@Override
 	public Item getItemDropped(int meta, Random random, int fortune) {
-		Item Drop;
-		 if(this == ModBlocks.KariniumOre){
-			 Drop = ModItems.kariniumDust;
-		 }
-		 else
-			 Drop = null;
-		 return Drop;
-		 
+		 return(this == ModBlocks.KariniumOre ? ModItems.kariniumDust : null);
 	}
 
 	@Override
@@ -50,17 +43,11 @@ public class TestOre extends Block {
 
 	@Override
 	public int quantityDropped(int meta, int fortune, Random random) {
-	    if (this.least_quantity >= this.most_quantity)
-	        return this.least_quantity;
-	    return this.least_quantity + random.nextInt(this.most_quantity - this.least_quantity + ((fortune * 2) - 1));
+	    return(this.least_quantity >= this.most_quantity ? this.least_quantity + random.nextInt(this.most_quantity - this.least_quantity + ((fortune * 2) - 1)) : this.least_quantity);
 	}
     @Override
 	public int getExpDrop(IBlockAccess p_149690_1_, int meta, int fortune){
-    	int exp = 0;
-    	if(this == ModBlocks.KariniumOre){
-            exp = MathHelper.getRandomIntegerInRange(rand, 16, 24);
-    	}
-    	return exp;
+    	return(this == ModBlocks.KariniumOre ? MathHelper.getRandomIntegerInRange(rand, 16, 24) : 0);
     }
 }
 
