@@ -43,11 +43,11 @@ public class TestOre extends Block {
 
 	@Override
 	public int quantityDropped(int meta, int fortune, Random random) {
-	    return(this.least_quantity >= this.most_quantity ? this.least_quantity + random.nextInt(this.most_quantity - this.least_quantity + ((fortune * 2) - 1)) : this.least_quantity);
+	    return(this == ModBlocks.KariniumOre ? (this.least_quantity <= this.most_quantity ? this.least_quantity + random.nextInt(this.most_quantity - this.least_quantity + fortune * 2 - 1) : this.least_quantity) : null);
 	}
     @Override
 	public int getExpDrop(IBlockAccess p_149690_1_, int meta, int fortune){
-    	return(this == ModBlocks.KariniumOre ? MathHelper.getRandomIntegerInRange(rand, 16, 24) : 0);
+    	return(this == ModBlocks.KariniumOre ? MathHelper.getRandomIntegerInRange(rand, 16 * fortune + 1, 24 * fortune) : 0);
     }
 }
 
