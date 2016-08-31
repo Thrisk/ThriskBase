@@ -1,49 +1,31 @@
-[20:34:40] [main/INFO]: Setting user: Player292
-[20:34:42] [Client thread/INFO]: LWJGL Version: 2.9.1
-[20:34:48] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thrisk Base
-[20:34:49] [Sound Library Loader/INFO]: Sound engine started
-[20:34:50] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[20:34:50] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[20:34:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thrisk Base
-[20:34:50] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[20:34:50] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[20:34:51] [Sound Library Loader/INFO]: Sound engine started
-[20:34:55] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[20:34:55] [Server thread/INFO]: Generating keypair
-[20:34:55] [Server thread/INFO]: Preparing start region for level 0
-[20:34:56] [Server thread/INFO]: Changing view distance to 12, from 10
-[20:34:56] [Server thread/INFO]: Player292[local:E:c2bf7b5e] logged in with entity id 155 at (321.6150973605146, 45.0, -697.6941690113337)
-[20:34:56] [Server thread/INFO]: Player292 joined the game
-[20:34:58] [Server thread/INFO]: Player292 has just earned the achievement [Taking Inventory]
-[20:34:58] [Client thread/INFO]: [CHAT] Player292 has just earned the achievement [Taking Inventory]
-[20:35:03] [Server thread/INFO]: [Player292: Set own game mode to Creative Mode]
-[20:35:03] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[20:35:12] [Server thread/INFO]: [Player292: Set own game mode to Survival Mode]
-[20:35:12] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[20:35:22] [Server thread/INFO]: [Player292: Set own game mode to Creative Mode]
-[20:35:22] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[20:35:40] [Server thread/INFO]: [Player292: Set own game mode to Survival Mode]
-[20:35:40] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[20:36:11] [Server thread/INFO]: Player292 was slain by Zombie Pigman
-[20:36:11] [Client thread/INFO]: [CHAT] Player292 was slain by Zombie Pigman
-[20:36:12] [Server thread/INFO]: [Player292: Set own game mode to Creative Mode]
-[20:36:12] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[20:36:19] [Server thread/INFO]: [Player292: Set own game mode to Creative Mode]
-[20:36:19] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[20:36:29] [Server thread/INFO]: [Player292: Set own game mode to Survival Mode]
-[20:36:29] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[20:36:47] [Server thread/INFO]: [Player292: Set own game mode to Creative Mode]
-[20:36:47] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[20:36:52] [Server thread/INFO]: [Player292: Set own game mode to Survival Mode]
-[20:36:52] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[20:37:54] [Server thread/INFO]: Saving and pausing game...
-[20:37:54] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[20:37:54] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[20:37:54] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[20:37:54] [Server thread/INFO]: Stopping server
-[20:37:54] [Server thread/INFO]: Saving players
-[20:37:54] [Server thread/INFO]: Saving worlds
-[20:37:54] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[20:37:54] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[20:37:54] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[20:37:55] [Client thread/INFO]: Stopping!
+[16:12:24] [main/INFO]: Setting user: Player387
+[16:12:25] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:12:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thrisk Base
+[16:12:33] [Sound Library Loader/INFO]: Sound engine started
+[16:12:33] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[16:12:33] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[16:12:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Thrisk Base
+[16:12:34] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[16:12:34] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:12:35] [Sound Library Loader/INFO]: Sound engine started
+[16:12:39] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[16:12:39] [Server thread/INFO]: Generating keypair
+[16:12:39] [Server thread/INFO]: Preparing start region for level 0
+[16:12:40] [Server thread/INFO]: Changing view distance to 12, from 10
+[16:12:40] [Server thread/INFO]: Player387[local:E:d10fed74] logged in with entity id 117 at (327.5202372223139, 45.0, -694.6440392111951)
+[16:12:40] [Server thread/INFO]: Player387 joined the game
+[16:12:44] [Server thread/INFO]: Player387 has just earned the achievement [Taking Inventory]
+[16:12:44] [Client thread/INFO]: [CHAT] Player387 has just earned the achievement [Taking Inventory]
+[16:13:03] [Server thread/INFO]: [Player387: Set own game mode to Survival Mode]
+[16:13:03] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[16:14:50] [Server thread/INFO]: Saving and pausing game...
+[16:14:50] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[16:14:50] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[16:14:50] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[16:14:51] [Server thread/INFO]: Stopping server
+[16:14:51] [Server thread/INFO]: Saving players
+[16:14:51] [Server thread/INFO]: Saving worlds
+[16:14:51] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[16:14:51] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[16:14:51] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[16:14:52] [Client thread/INFO]: Stopping!

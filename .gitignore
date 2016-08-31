@@ -15,7 +15,11 @@ local.properties
 .classpath
 .settings/
 .loadpath
-logs/
+logs
+saves
+crash-reports
+
+
 
 # External tool builders
 .externalToolBuilders/
